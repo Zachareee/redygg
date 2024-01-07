@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>redy</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>redygg</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>redygg</name>
 	<description>Backend for redy.gg</description>
