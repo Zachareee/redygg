@@ -45,4 +45,4 @@ jobs:
           docker push ${{ vars.GAR }}
 
       - name: Restart service
-        run: gcloud run deploy redygg --image ${{ vars.GAR }}
+        run: gcloud run deploy redygg --region ${{ vars.REGION }} --image ${{ vars.GAR }}
