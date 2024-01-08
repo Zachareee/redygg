@@ -1,2 +1,1 @@
-bash mvnw package -Dmaven.test.skip && \
-docker build . -t redygg-backend
+bash mvnw package -Dmaven.test.skip

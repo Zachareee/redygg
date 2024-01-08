@@ -1,0 +1,26 @@
+services:
+  redygg:
+    build: 
+      context: .
+    image: redygg
+    container_name: redygg
+    depends_on:
+      - mongodb
+    hostname: redygg
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://database:27017/redygg?retryWrites=true&w=majority
+    ports:
+      - 3001:8080
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    hostname: database
+    environment:
+        MONGO_INITDB_DATABASE: redygg
+    ports:
+      - 3002:27017
+    volumes:
+      - mongodb:/data/db
+volumes:
+  mongodb:
+    name: mongodb
