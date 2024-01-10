@@ -2,7 +2,7 @@ package redy.service;
 
 import java.util.*;
 
-import redy.entity.GameCharacter;
+import redy.entity.character.GameCharacter;
 import redy.repository.GameCharacterDB;
 
 import org.springframework.stereotype.Service;

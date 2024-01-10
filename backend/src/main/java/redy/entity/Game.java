@@ -1,5 +1,7 @@
 package redy.entity;
 
+import redy.entity.character.*;
+
 import java.util.*;
 
 import jakarta.validation.Valid;
@@ -16,6 +18,16 @@ public class Game {
     @NotNull
     protected Date released;
     protected Image thumbnail;
-    protected List<@Valid Level> levels;
-    private List<@Valid GameCharacter> character_list;
+    protected Collection<@Valid Level> levels;
+    protected Collection<@Valid CharacterVariant> character_list;
+
+    public Game addLevel(Level level) {
+        levels.add(level);
+        return this;
+    }
+
+    public Game addCharacter(CharacterVariant var) {
+        character_list.add(var);
+        return this;
+    }
 }

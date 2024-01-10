@@ -17,6 +17,6 @@ public class Series {
     private String name;
     private String description;
     @NotNull
-    private List<@Valid Game> gamelist;
+    private Collection<@Valid Game> gamelist;
     private Image thumbnail;
 }

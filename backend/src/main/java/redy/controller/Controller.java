@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
 import redy.entity.*;
+import redy.entity.character.GameCharacter;
 import redy.service.*;
 
 @RestController
